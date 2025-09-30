@@ -1,0 +1,23 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat',Arial,sans-serif;}
+body { min-height:100vh; background: linear-gradient(125deg,#21826e 60%,#efffe9 150%); display:flex; align-items:center; justify-content:center;}
+.container { width:95vw; max-width:750px; height:420px; background:#fffefa; border-radius:20px; overflow:hidden; display:flex; box-shadow:0 0 28px rgba(34,139,87,0.21);}
+.form-box { width:53%; padding:38px 34px 21px 34px;transition:0.7s ease;background:#fcfcfb;}
+.form-box h2 {margin-bottom:20px;font-size:28px;text-align:center;color:#21826e;font-weight:600;}
+.input-box {position:relative;margin:20px 0 8px 0;}
+.input-box input{width:100%;padding:13px;border: none;outline:none;border-bottom:2.6px solid #bfffd8;background:transparent;color:#21826e;font-size:16px;font-family:'Montserrat', Arial, sans-serif;}
+.input-box input:focus{border-color:#49e89a;}
+.input-box label{position:absolute;top:50%;left:5px;transform:translateY(-50%);pointer-events:none;transition:0.29s;color:#91aead;font-size:16px;}
+.input-box input:focus~label, .input-box input:valid~label{top:-8px;font-size:13px;color:#21826e;}
+.input-box .icon{position:absolute;right:10px;top:12px;font-size:18px;color:#21826e;}
+.btn{width:100%;padding:13px;background:linear-gradient(90deg,#21826e,#49e89a 90%);border:none;border-radius:8px;cursor:pointer;font-size:16px;color:#fff;margin-top:10px;font-weight:600;box-shadow:0 2px 9px #21826e17;transition:background 0.28s;}
+.btn:hover{opacity:0.95;background:linear-gradient(90deg,#21826e 60%,#49e89a 100%);}
+.switch{margin-top:13px;text-align:center;}
+.switch a{color:#21826e;text-decoration:none;font-weight:600;}
+.switch a:hover{text-decoration:underline;}
+.form-box.register{position:absolute;right:-100%;top:0;height:100%;background:#fcfcfb;}
+.container.active .form-box.login{transform:translateX(-110%);opacity:0.14;filter:blur(12px);}
+.container.active .form-box.register{right:0;transition:0.7s;}
+.loader{display:none;margin:10px auto;text-align:center;color:#21826e;font-size:16px;}
+.error-message {display:none;color:#e13c30;font-size:14px;margin-top:4px;text-align:center;}
+.success-message {display:none;color:#26b832;font-size:14px;margin-top:4px;text-align:center;}
+@media(max-width:900px){.container{width:97vw;}.form-box{padding:25px 8vw;}}

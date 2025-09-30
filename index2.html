@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIH 2025 - Breed Recognition</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2f1c12b76e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo"><span><b>TEAM INNOV8OR</b></span></div>
+    <ul class="nav-links">
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#problem"><i class="fas fa-exclamation"></i> Problem Statement</a></li>
+      <li><a href="#problem-id"><i class="fas fa-id-card"></i> Problem ID</a></li>
+      <li><a href="#solution"><i class="fas fa-lightbulb"></i> Solution</a></li>
+      <li><a href="#upload"><i class="fas fa-upload"></i> Breed Identifier</a></li>
+      <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+      <li><a href="#form"><i class="fas fa-comments"></i> Feedback</a></li>
+      <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+  </nav>
+  <section id="home" class="section home animated-slide">
+    <h1 class="main-heading">Image-Based Breed Recognition</h1>
+    <p class="subtitle">For Cattle and Buffaloes of India – A Smart India Hackathon 2025 Project</p>
+  </section>
+  <section id="problem" class="section animated-fade">
+    <h2>Problem Statement</h2>
+    <p>
+      Manual identification of cattle and buffalo breeds is slow, prone to errors, and depends heavily on expert knowledge.<br>
+      This project introduces an automated, AI-powered image recognition system for superior livestock management in India.
+    </p>
+  </section>
+  <section id="problem-id" class="section animated-fade">
+    <h2>Problem Details</h2>
+    <ul class="details-list">
+      <li><strong>Ministry:</strong> Ministry of Fisheries, Animal Husbandry & Dairying</li>
+      <li><strong>Problem Code:</strong> SIH25004</li>
+      <li><strong>Category:</strong> Software</li>
+      <li><strong>Domain:</strong> Agriculture, FoodTech & Rural Development</li>
+    </ul>
+  </section>
+  <section id="solution" class="section animated-fade">
+    <h2>Proposed Solution</h2>
+    <p>
+      A deep learning (CNN) model is trained on labeled images of Indian cattle and buffalo breeds. The easy-to-use frontend allows image upload, with breed predictions served via backend API integration.
+    </p>
+  </section>
+  <section id="upload" class="section animated-fade">
+    <h2>Breed Identifier</h2>
+    <div class="upload-box">
+      <input type="file" id="imageUpload" accept="image/*">
+      <img id="preview" alt="Preview" style="display:none; max-width:300px;" />
+      <button id="predictBtn">
+        <i class="fas fa-search"></i> Identify Breed
+      </button>
+      <div class="loader" id="loader"><i class="fas fa-spinner fa-spin"></i> Predicting…</div>
+      <p id="predictionText" style="min-height:28px;">Upload an image and click to predict.</p>
+    </div>
+  </section>
+  <section id="contact" class="section contact animated-fade">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@breedrecog.com">info@breedrecog.com</a></p>
+    <p>Phone: +91-1005765671</p>
+    <p>Department: Ministry of Fisheries, Animal Husbandry & Dairying</p>
+  </section>
+  <section id="form" class="section animated-fade">
+    <h2>Submit Your Feedback</h2>
+    <form id="responseForm">
+      <input type="text" id="feedbackName" placeholder="Your Name" required />
+      <input type="email" id="feedbackEmail" placeholder="Your Email" required />
+      <textarea id="feedbackMessage" placeholder="Your message..." rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formStatus"></div>
+  </section>
+  <footer>
+    NOTE: This is a prototype as we are working on it.
+    <pre>&copy; TEAM INNOV8OR. All Rights Reserved.</pre>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

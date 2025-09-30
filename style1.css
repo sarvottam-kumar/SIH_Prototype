@@ -1,0 +1,18 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat',Arial,sans-serif;}
+body {background: linear-gradient(135deg, #e3fff0, #d1e8ff 60%, #f9f9f9 100%); color: #363636;}
+nav {background:#21826e;color:white;padding:18px 36px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;box-shadow:0 3px 12px rgba(28,100,70,0.16);}
+.logo {font-family:'Montserrat',sans-serif;font-size:1.32rem;letter-spacing:1px;color:#fff;}
+.nav-links {list-style:none;display:flex;gap:18px;}
+.nav-links li a{color:white;text-decoration:none;font-weight:bold;font-size:1rem;padding:4px 10px;border-radius:4px;transition:background 0.2s,color 0.2s;display:flex;align-items:center;gap:5px;}
+.nav-links li a:hover{background:#ffffff55;color:#21826e;}
+.section{padding:38px 10px;max-width:900px;margin:37px auto 0 auto;background:white;border-radius:14px;box-shadow:0 8px 25px rgba(34,139,87,0.07);text-align:center;animation:fade-in 0.9s;}
+.section h2{color:#21826e;margin-bottom:18px;font-size:2rem;}
+.main-heading{font-size:2.24rem;color:#21826e;margin-bottom:10px;}
+.subtitle{font-size:1.18rem;color:#555;}
+.details-list{text-align:left;max-width:510px;margin:auto;line-height:1.82;font-size:1.05rem;}
+.upload-box{border:2px dashed #98d6c1;padding:20px 14px;border-radius:10px;max-width:370px;margin:auto;background:#f7fff9;}
+#preview{width:100%;max-height:230px;object-fit:contain;border-radius:8px;margin:16px 0 12px 0;display:none;box-shadow:0 4px 13px rgba(34,139,87,0.12);}
+#loader{color:#21826e;margin:10px 0 0 0;font-size:1.12rem;display:none;}
+button,
+.btn{background-color:#21826e;color:white;padding:11px 22px;border:none;border-radius:6px;font-size:1.06rem;font-family:'Montserrat
+}
